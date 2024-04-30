@@ -1,8 +1,9 @@
+import { Footer, Header } from '@/components/layout'
+import { cn } from '@/utils/tw'
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { Footer, Header } from '@/components/layout'
-import { cn } from '@/utils/tw'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1 bg-[#181818] py-20">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
