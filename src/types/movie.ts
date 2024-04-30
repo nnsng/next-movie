@@ -14,7 +14,7 @@ export type MovieItem = {
   slug: string
   origin_name: string
   thumb_url: string
-  poster_url: string
+  poster_url: string // landscape
   year: number
 }
 

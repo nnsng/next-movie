@@ -7,8 +7,15 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#E30814',
+      },
+      container: {
+        center: true,
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('daisyui'), require('@tailwindcss/line-clamp')],
 }
 export default config
